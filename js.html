@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Work</title>
+	<script>
+	function ShowDate(){
+	document.getElementById('demo').innerHTML = Date();
+	}
+	</script>
+	
+	<script>
+	
+	function PromptUser(){
+	var text;
+	var name = window.prompt("Enter your name");
+	if (name !=null || name == "") {
+	txt = "Hello"+name;
+	}
+	document.getElementById("name").innerHTML = name;
+	}
+	</script>
+</head>
+
+<body>
+	<button type="button" 
+			onClick="document.getElementById('demo1').innerHTML = Date()">
+	Click Here
+	</button>
+	<p id="demo1">
+		</p>
+	<br />
+		<button	type="button"
+				onClick="ShowDate();">
+		Date here</button>
+	<p id="demo">
+	</p>
+	<p id="name">
+	</p>
+</body>
+</html>
